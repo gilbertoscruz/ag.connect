@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.Raizlabs.DBFlow:dbflow-sqlcipher-4.1.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dbflow-sqlcipher-4.1.2.aar/0e59819c26daf8ca1fa4d1440e074136/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dbflow-sqlcipher-4.1.2.aar/0e59819c26daf8ca1fa4d1440e074136/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-sqlcipher/4.1.2/24bf193519b8453b8283d2b144cf64febea60cf3/dbflow-sqlcipher-4.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

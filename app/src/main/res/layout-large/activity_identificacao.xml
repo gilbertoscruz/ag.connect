@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_identificacao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="landscape"
+    tools:context="agrisolus.com.br.agconnect.IdentificacaoActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/ic_logo_ag_connect" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:alpha=".1"
+        app:srcCompat="@drawable/ic_logo"
+        android:layout_above="@+id/fragmentoEmpresa" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragmentoEmpresa"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:text="@string/app_identificacao_nomeacesso"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/edtNomeAcesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:background="@drawable/ic_quadrocinza_claro"
+                android:ems="10"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/corPreto"
+                android:textColorHint="@color/corPreto" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edtNomeAcesso"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_identificacao_senhaacesso"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/edtSenhaAcesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_quadrocinza_claro"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/corPreto"
+                android:textColorHint="@color/corPreto" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLoginContinuar"
+                    style="@style/Button.Verde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/app_botao_identificar" />
+
+                <Button
+                    android:id="@+id/btnLoginSair"
+                    style="@style/Button.Vermelho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/app_botao_identificar_sair" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <fragment
+        android:id="@+id/fragmentoEmpresa"
+        class="agrisolus.com.br.agconnect.FragmentoEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        tools:layout="@layout/frame_empresa" />
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/corFundo</item>
+        <item name="colorPrimaryDark">@color/corFundoShape</item>
+        <item name="colorAccent">@color/corFundo</item>
+
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:editTextColor">#ffffff</item>
+        <item name="android:textColorHint">#60ffffff</item>
+
+        <item name="android:fontFamily">@font/font1</item>
+
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+    </style>
+
+    <style name="Button" parent="android:Widget.Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:padding">-10dp</item>
+        <item name="android:textSize">@dimen/app_text_size_button</item>
+        <item name="android:fontFamily">@font/font1</item>
+    </style>
+
+    <style name="Button.Branco">
+        <item name="android:background">@drawable/buttonshape_branco</item>
+        <item name="android:textColor">@drawable/buttonshape_branco_texto</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:fontFamily">@font/font1</item>
+    </style>
+
+    <style name="Button.Cinza">
+        <item name="android:background">@drawable/buttonshape_cinza</item>
+        <item name="android:textColor">@drawable/buttonshape_cinza_texto</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:fontFamily">@font/font1</item>
+    </style>
+
+    <style name="Button.CinzaClaro">
+        <item name="android:background">@drawable/buttonshape_cinza</item>
+        <item name="android:textColor">@drawable/buttonshape_cinza_texto</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:fontFamily">@font/font1</item>
+    </style>
+
+    <style name="Button.Verde">
+        <item name="android:background">@drawable/buttonshape_verde</item>
+        <item name="android:textColor">@drawable/buttonshape_verde_texto</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:fontFamily">@font/font1</item>
+    </style>
+
+    <style name="Button.Vermelho">
+        <item name="android:background">@drawable/buttonshape_vermelho</item>
+        <item name="android:textColor">@drawable/buttonshape_vermelho_texto</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:fontFamily">@font/font1</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/corLetraBranco</item>
+    </style>
+</resources>

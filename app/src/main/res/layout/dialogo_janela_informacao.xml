@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundoDialogoMensagem"
+    android:paddingBottom="@dimen/app_dialogo_mensagem_padding"
+    android:paddingLeft="@dimen/app_dialogo_mensagem_padding"
+    android:paddingRight="@dimen/app_dialogo_mensagem_padding"
+    android:paddingTop="@dimen/app_dialogo_mensagem_padding"
+    android:screenOrientation="portrait">
+
+
+    <LinearLayout
+        android:id="@+id/layout_janela_sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_janela_info"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_janela_texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/corPreto" />
+
+        <Button
+            android:id="@+id/bt_sim"
+            style="@style/Button.Verde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="@string/app_bt_ok" />
+    </LinearLayout>
+</RelativeLayout>

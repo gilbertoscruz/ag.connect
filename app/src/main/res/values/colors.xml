@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2D353D</color>
+    <color name="colorPrimaryDark">#2D353D</color>
+    <color name="colorAccent">#2D353D</color>
+
+    <color name="corFundo">#2D353D</color>
+    <color name="corFundoTransparente">#902D353D</color>
+    <color name="corFundoShape">#323B44</color>
+
+    <color name="corVerde">#32c908</color>
+    <color name="corVerdeForte">#1e8602</color>
+    <color name="corVerdeClaro">#349e18</color>
+
+    <color name="corVermelho">#D93600</color>
+    <color name="corVermelhoForte">#a62c04</color>
+    <color name="corVermelhoClaro">#d6623b</color>
+
+    <color name="corCinzaEscuro">#6d7378</color>
+    <color name="corCinzaClaro">#888e93</color>
+    <color name="corLetraBranco">#ffffff</color>
+    <color name="corLetraVerde">#ccff33</color>
+    <color name="corLetraVerdeTransparente">#70ccff33</color>
+    <color name="corPreto">#000000</color>
+    <color name="corPretoTransparente">#90000000</color>
+
+    <color name="corAmarelo">#ffea00</color>
+
+    <color name="corFundoDialogoMensagem">#99000000</color>
+</resources>

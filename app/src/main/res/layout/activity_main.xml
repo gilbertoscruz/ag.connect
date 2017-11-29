@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="portrait"
+    tools:context="agrisolus.com.br.agconnect.PrincipalActivity">
+
+    <FrameLayout
+        android:id="@+id/layoutLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_quadrocinza_escuro">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_logo_ag_connect"
+                tools:scaleType="fitCenter" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/fragmentoEmpresa"
+        class="agrisolus.com.br.agconnect.FragmentoEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/frame_empresa" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layoutLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ic_quadrocinza_escuro"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_medidor_racao_titulo"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bt_configurar_medidor_racao"
+                    style="@style/Button.Verde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/app_bt_configurar"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_medidor_racao_endereco_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_medidor_endereco_medidor" />
+
+                <TextView
+                    android:id="@+id/tv_medidor_racao_rede"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_medidor_rede_medidor" />
+
+                <TextView
+                    android:id="@+id/tv_medidor_racao_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_medidor_status_medidor" />
+
+                <TextView
+                    android:id="@+id/tv_medidor_racao_ultimo_recebimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ic_quadrocinza_escuro"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_medidor_agua_titulo"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_medidor_agua_endereco_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_medidor_endereco_medidor" />
+
+                <TextView
+                    android:id="@+id/tv_medidor_agua_rede"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_medidor_rede_medidor" />
+
+                <TextView
+                    android:id="@+id/tv_medidor_agua_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_medidor_status_medidor" />
+
+                <TextView
+                    android:id="@+id/tv_medidor_agua_ultimo_recebimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="TextView" />
+
+                <Button
+                    android:id="@+id/bt_configurar_medidor_agua"
+                    style="@style/Button.Verde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_bt_configurar"
+                    android:layout_marginBottom="5dp"/>
+
+                <Button
+                    android:id="@+id/bt_conectar_medidor_agua"
+                    style="@style/Button.Vermelho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_bt_conectar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_quadrocinza_escuro"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textAppCopyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/app_powered_by" />
+
+                <TextView
+                    android:id="@+id/textAppVersion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Versão 1.0.0.1" />
+
+                <TextView
+                    android:id="@+id/tv_tempo_envio_arquivos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_arquivo_enviar"
+                    android:paddingEnd="5dp"
+                    android:text="00:00" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

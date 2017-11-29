@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    
+	compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    useLibrary 'org.apache.http.legacy'
+	
+	
+    defaultConfig {
+        applicationId "agrisolus.com.br.agconnect"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.6.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    def formattedDate = new Date().format('yyyyMMdd.HHmmss')
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "ag.connect-v${variant.versionCode}-${formattedDate}-${variant.versionName}.apk"
+                }
+            }
+        }
+    }
+}
+
+def dbflow_version = "4.1.2"
+def androidSupportVersion = '26.1.+'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:${dbflow_version}"
+
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.google.guava:guava:23.0-android'
+
+    /* DEBUG */
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
+
+
+    /* SUPPORT */
+    compile("com.android.support:support-v4:${androidSupportVersion}")  {
+        force = true
+    }
+    compile("com.android.support:appcompat-v7:${androidSupportVersion}")  {
+        force = true
+    }
+    compile("com.android.support:support-annotations:${androidSupportVersion}")  {
+        force = true
+    }
+    compile("com.android.support:customtabs:${androidSupportVersion}")  {
+        force = true
+    }
+
+    compile 'com.android.support:multidex:1.0.2'
+}

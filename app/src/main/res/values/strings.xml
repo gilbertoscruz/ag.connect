@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">AG.Connect</string>
+    <string name="app_name.servico">AG.Connect.Servico</string>
+    <string name="app_empresa">AgriSolus %s</string>
+    <string name="app_powered_by">Powered by AgriSolus</string>
+    <string name="app_powered_by_ano">Powered by AgriSolus  - %s</string>
+    <string name="app_botao_identificar">Acessar aplicativo</string>
+    <string name="app_botao_identificar_sair">Sair do aplicativo</string>
+    <string name="app_botao_voltar">Voltar</string>
+    <string name="app_botao_confirmar">Confirmar</string>
+    <string name="app_botao_selecionar">Selecionar</string>
+    <string name="app_mensagem_sair_aplicativo">Deseja realmente sair do aplicativo?</string>
+    <string name="app_bt_sim">Sim</string>
+    <string name="app_bt_nao">Não</string>
+    <string name="app_bt_ok">OK</string>
+    <string name="app_sair_titulo">SAIR</string>
+    <string name="app_versao">Versão %s</string>
+
+    <string name="app_rede_indisponivel">Internet indisponível.\nVerifique sua conexão com a internet e tente novamente.</string>
+    <string name="app_rede_indisponivel_desc">Não foi possível estabelecer uma conexão com os servidores da Agricultec. Por favor verifique sua conexão com a internet e tente novamente.</string>
+
+    <string name="app_identificacao_nomeacesso">Nome de acesso</string>
+    <string name="app_identificacao_nomeacesso_hint">Informe seu nome de acesso</string>
+    <string name="app_identificacao_senhaacesso">Senha de acesso</string>
+    <string name="app_identificacao_senhaacesso_hint">Informe sua senha de acesso</string>
+    <string name="app_identificacao_msg_erro_email">Informe o nome de acesso da sua conta da AgriSolus</string>
+    <string name="app_identificacao_msg_erro_senha">Informe sua senha da AgriSolus</string>
+    <string name="app_autenticacao_erro_autenticar">Não foi possível localizar os dados do usuário nos servidores da AgriSolus.</string>
+    <string name="app_autenticacao_msg_aguarde">Aguarde.\nConsultando informações do usuário&#8230;</string>
+    <string name="app_autenticacao_msg_nenhuma_conta">Não foi definido nenhuma conta para o usuário.</string>
+    <string name="app_autenticacao_msg_criar_conta_erro">O processo de identificação do usuário foi cancelado.</string>
+    <string name="app_autenticacao_msg_criar_conta_ok">Obrigado %s por sua identificação.\nAguarde enquanto você será direcionado para sua conta.</string>
+    <string name="app_autenticacao_email_texto_hint">nome de acesso</string>
+    <string name="app_autenticacao_senha_texto_hint">senha de acesso</string>
+    <string name="app_autenticacao_conta_informe_dados">Informe seus dados para continuar o acesso a sua conta da AgriSolus.</string>
+
+
+    <string name="app_tempo_envio_arquivos_novo">%1$02d:%2$02d</string>
+    <string name="app_sem_internet">Não foi possível estabelecer uma conexão com a Internet no momento. Verifique se sua Internet esta conectada.</string>
+    <string name="app_sem_internet_verificar">Nova verificação em: </string>
+    <string name="app_tempo_enviar">%1$02d minutos e %2$02d segundos</string>
+
+    <string name="app_medidor_endereco_medidor">Endereço IP do medidor: %s</string>
+    <string name="app_medidor_rede_medidor">Rede do medidor: %s</string>
+    <string name="app_medidor_status_medidor">Status do medidor: %s</string>
+    <string name="app_medidor_ultimo_recebimento">Última informação recebida em: %s</string>
+
+    <string name="app_bt_conectar">Conectar</string>
+    <string name="app_bt_configurar">Configurar</string>
+    <string name="app_bt_reset">Redefinir configurações</string>
+
+    <string name="app_medidor_racao_titulo">Medidor de Ração</string>
+    <string name="app_medidor_agua_titulo">Medidor de Água</string>
+    <string name="app_medidor_agua_msg_configurado_sucesso">Sensor de Medidor de Água configurado com sucesso.</string>
+    <string name="app_medidor_agua_msg_conectando_sensor">Aguarde.\nConectando ao medidor de água.</string>
+    <string name="app_medidor_agua_msg_conectando_sensor_erro">Não foi possível conectar ao medidor de água.\nVerifique as configurações e tente novamente.</string>
+    <string name="app_medidor_racao_msg_configurado_sucesso">Sensor de Medidor de Ração configurado com sucesso.</string>
+
+    <string name="app_medidor_status_conectado">Conectado</string>
+    <string name="app_medidor_status_desconectado">Desconectado</string>
+    <string name="app_endereco_nao_configurado">Nenhum endereço configurado</string>
+    <string name="app_rede_nao_configurada">Nenhuma rede configurada</string>
+    <string name="app_medidor_ultimo_recebimento_invalido">Sem informação</string>
+
+    <string name="app_dialogo_configurar_medidor_titulo">Configurações de conexão</string>
+    <string name="app_dialogo_configurar_medidor_mensagem">Informe os dados abaixo para estabelecer uma conexão com o medidor.</string>
+    <string name="app_dialogo_configurar_medidor_endereco_ip">Endereço IP</string>
+    <string name="app_dialogo_configurar_medidor_rede_nome">Nome da rede</string>
+    <string name="app_dialogo_configurar_medidor_rede_senha">Senha da rede</string>
+
+    <string name="app_msg_erro_endereco_ip">Informe o endereço de IP do medidor.</string>
+    <string name="app_msg_erro_rede_nome">Informe o nome da rede a qual o medidor irá conectar.</string>
+    <string name="app_msg_erro_rede_senha">Informe a senha da rede a qual o medidor irá conectar.</string>
+
+    <string name="app_tipo_polegada_titulo">Tipo de polegada do sensor</string>
+    <string name="app_tipo_polegada_meia">½ polegada</string>
+    <string name="app_tipo_polegada_uma">1 polegada</string>
+    <!--<string name="app_tipo_polegada_uma_meia">1/½ polegada</string>-->
+</resources>
